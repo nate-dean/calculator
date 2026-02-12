@@ -15,23 +15,29 @@
         <div id="calculator">
          <input id="display" readonly>
             <div id="keys">
-             <button onclick="clearDisplay()">C</button>
-             <button onclick="backspace()">⌫</button>
-             <button onclick="appendToDisplay('+')">÷</button>
-             <button onclick="appendToDisplay('7')">7</button>
-             <button onclick="appendToDisplay('8')">8</button>
-             <button onclick="appendToDisplay('9')">9</button>
-             <button onclick="appendToDisplay('×')">×</button>
-             <button onclick="appendToDisplay('4')">4</button>
-             <button onclick="appendToDisplay('5')">5</button>
-             <button onclick="appendToDisplay('6')">6</button>
-             <button onclick="appendToDisplay('-')">-</button>
-             <button onclick="appendToDisplay('1')">1</button>
-             <button onclick="appendToDisplay('2')">2</button>
-             <button onclick="appendToDisplay('3')">3</button>
-             <button onclick="appendToDisplay('0')">0</button>
-             <button onclick="appendToDisplay('.')">.</button>
-             <button onclick="calculate()">=</button>
+
+                
+             <button onclick="clearDisplay()" class="row top big-child">C</button>
+             <button onclick="backspace()" class="row top big child">⌫</button>
+             <button onclick="appendToDisplay('+')" class="row top small-child">÷</button>
+                 
+             <button onclick="appendToDisplay('7')" class="row mid">7</button>
+             <button onclick="appendToDisplay('8')" class="row mid">8</button>
+             <button onclick="appendToDisplay('9')" class="row mid">9</button>
+             <button onclick="appendToDisplay('×')" class="row mid">×</button>
+             <button onclick="appendToDisplay('4')" class="row mid">4</button>
+             <button onclick="appendToDisplay('5')" class="row mid">5</button>
+             <button onclick="appendToDisplay('6')" class="row mid">6</button>
+             <button onclick="appendToDisplay('-')" class="row mid">-</button>
+             <button onclick="appendToDisplay('1')" class="row mid">1</button>
+             <button onclick="appendToDisplay('2')" class="row mid">2</button>
+             <button onclick="appendToDisplay('3')" class="row mid">3</button>
+             <button onclick="appendToDisplay('+')" class="row mid">+</button>
+
+             <button onclick="appendToDisplay('0')" class="row bottom">0</button>
+             <button onclick="appendToDisplay('.')" class="row bottom">.</button>
+             <button onclick="calculate()" class="row bottom">=</button>
+
           </div>  
         </div>
 
