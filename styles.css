@@ -27,8 +27,11 @@ width: 400px;
     align-items: center;
 }
 
-.top, .bottom {
-flex: 2 1 33%;
+.big-child {
+flex: 2 1 33.333%
+}
+.small-child {
+flex: 0 1 25%;
 }
 
 .mid {
