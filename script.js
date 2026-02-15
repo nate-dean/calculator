@@ -11,36 +11,27 @@ function backspace(){
     display.value = display.value.slice(0, -1);
 };
 
+
+
 //Operators
 
-const operations = {
-    '+': add,
-    '-': subtract,
-    '*': multiply,
-    '/': divide
- };
-
-function add(a, b){
-   return a + b;
+function add(num1, num2){
+   return parseFloat (num1) + parseFloat (num2);
 };
 
-function subtract(a, b){
-    return a - b;
+function subtract(num1, num2){
+    return parseFloat (num1) - parseFloat (num2);
  };
 
- function multiply(a, b){
-    return a * b;
+ function multiply(num1, num2){
+    return parseFloat (num1) * parseFloat (num2);
  };
 
- function divide(a, b){
-    return a / b;
+ function divide(num1, num2){
+    return parseFloat (num1) / parseFloat (num2);
  };
 
- function operate(operator, num1, num2){
-    if (operator in operations){
-        return operations[operator](num1, num2);
-    } else {
-        return "Err";
-    }
- }
+
+
+
 
