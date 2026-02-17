@@ -1,24 +1,42 @@
-// const display = document.getElementById("display")
 
-// function clearDisplay(){
-//     display.value = " ";
-// };
+let firstNumber
+let secondNumber 
 
-// function backspace(){
-//     display.value = display.value.slice(0, -1);
-// };
-
-let firstNumber = 0;
-let secondedNumber = 0;
-let operator = 0;
+let operator 
 let result = 0;
 let step = 0;
 
+let numArray = [];
+let secondNumArray = [];
+
+let display = document.getElementById("display")
 
 function getNumber(num){
-console.log(num)
+if (step === 0 || step === 1){
+    numArray.push(num)
+    step = 1
+    firstNumber = Number(numArray.join(""))
+    display.value = firstNumber
+} else if (step === 2){
+    secondNumArray.push(num)
+    secondNumber = Number(secondNumArray.join(""))
+    display.value = secondNumber
+}
 };
 
 function getOperator(op){
-console.log(op)
+step = 2
+operator = op
+};
+
+function clearDisplay(){
+
+};
+
+function backspace(){
+    display.value = display.value.slice(0, -1);
+};
+
+const calculateResult = () => {
+ console.log("Calculate Here")
 };
