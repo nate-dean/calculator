@@ -30,7 +30,14 @@ operator = op
 };
 
 function clearDisplay(){
-
+    display.value = null
+    firstNumber = null
+    secondNumber = null
+    step = 0
+    operation = null
+    result = 0 
+    numArray = []
+    secondNumArray = []
 };
 
 function backspace(){
